@@ -37,9 +37,9 @@ def quantize_model(
     calib_data = glob.glob(calib_data_path + "/**", recursive=True)
     calib_data = random.choices(calib_data, k=min(num_data, len(calib_data)))
     # calibrator = Calibrator(model, CalibrationMethod._member_map_[method])
-    calibrator = Calibrator(model, CalibrationMethod.ENTROPY_SYM])
-    # calibrator = Calibrator(model, CalibrationMethod.ENTROPY_ASYM])
-    # calibrator = Calibrator(model, CalibrationMethod.PERCENTILE_SYM])
+    calibrator = Calibrator(model, CalibrationMethod.ENTROPY_SYM)
+    # calibrator = Calibrator(model, CalibrationMethod.ENTROPY_ASYM)
+    # calibrator = Calibrator(model, CalibrationMethod.PERCENTILE_SYM)
 
     preprocess = YOLOPreProcessor()
     for data in tqdm(calib_data, desc="calibration"):
