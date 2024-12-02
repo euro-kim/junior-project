@@ -1,0 +1,6 @@
+furiosa-sdk[full] == 0.10.*
+opencv-python == 4.9.*
+torch == 1.13.1
+torchvision == 0.14.1
+uvloop
+ultralytics
