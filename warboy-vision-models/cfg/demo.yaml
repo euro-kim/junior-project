@@ -5,4 +5,4 @@ output_path: output_detection
 num_worker: 8
 device: npu1pe0
 video_path:
-  - input_videos/Car_1.mp4
+  - /Short.mp4
