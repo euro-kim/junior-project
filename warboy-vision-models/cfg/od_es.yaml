@@ -5,7 +5,7 @@ onnx_path: yolov8n.onnx                  # onnx model path
 onnx_i8_path: yolov8l_i8.onnx # quantized onnx model path
 
 calibration_params:
-  calibration_method: ENTORPY_SYM # calibration method
+  calibration_method: ENTROPY_SYM # calibration method
   calibration_data: val2017          # calibration data path
   num_calibration_data: 200     # number of calibration data
 
