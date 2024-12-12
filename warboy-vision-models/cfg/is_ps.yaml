@@ -12,7 +12,7 @@ calibration_params:
 video_path:
   - /Short.mp4
 model_name: yolov8n
-weight: yolov8n.pt                       # weight file path
+weight: yolov8n-seg.pt                       # weight file path
 conf_thres: 0.001
 iou_thres: 0.7
 input_shape: [640, 640]         # model input shape (Height, Width)
