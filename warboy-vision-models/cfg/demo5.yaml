@@ -1,0 +1,8 @@
+application: instance_segmentation 
+model_config: ./cfg/is_es.yaml
+model_path: ./cfg/yolov8n_i8_is_es.onnx
+output_path: output5
+num_worker: 8
+device: npu1pe0
+video_path:
+  - /Short.mp4

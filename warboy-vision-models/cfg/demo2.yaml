@@ -1,0 +1,8 @@
+application: object_detection
+model_config: ./cfg/od_es.yaml
+model_path: ./cfg/yolov8l_i8_od_es.onnx
+output_path: output2
+num_worker: 8
+device: npu1pe0
+video_path:
+  - /Short.mp4
