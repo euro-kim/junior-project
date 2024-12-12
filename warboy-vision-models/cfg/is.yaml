@@ -1,8 +1,6 @@
 application: instance_segmentation   #
 model_name: yolov8l
 weight: yolov8n.pt                       # weight file path
-onnx_path: yolov8n.onnx                  # onnx model path
-
 conf_thres: 0.001
 iou_thres: 0.7
 input_shape: [640, 640]         # model input shape (Height, Width)

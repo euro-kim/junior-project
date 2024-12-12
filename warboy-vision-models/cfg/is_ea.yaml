@@ -1,5 +1,6 @@
 model_config: ./cfg/is.yaml
-model_path: yolov8n_i8.onnx
+onnx_path: yolov8n_is_ea.onnx
+model_path: yolov8n_i8_is_ea.onnx
 output_path: image_segmentation_ea
 num_worker: 8
 device: npu1pe0
