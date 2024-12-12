@@ -11,11 +11,13 @@ calibration_params:
   num_calibration_data: 200     # number of calibration data
 video_path:
   - /Short.mp4
-model_name: yolov8x
+model_name: yolov8n
 weight: yolov8n.pt                       # weight file path
 conf_thres: 0.001
 iou_thres: 0.7
 input_shape: [640, 640]         # model input shape (Height, Width)
+mask_threshold: 0.5
+post_process: true
 anchors:                        # anchor information
   -
 class_names:
