@@ -1,3 +1,4 @@
+application: instance_segmentation   #
 model_config: ./cfg/is.yaml
 onnx_path: yolov8n_is_ps.onnx                  # onnx model path
 model_path: yolov8n_i8_is_ps.onnx
