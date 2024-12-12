@@ -1,5 +1,4 @@
 application: instance_segmentation   #
-model_config: ./cfg/is.yaml
 onnx_path: yolov8n_is_ps.onnx                  # onnx model path
 model_path: yolov8n_i8_is_ps.onnx
 output_path: image_segmentation_ps
@@ -12,3 +11,91 @@ calibration_params:
   num_calibration_data: 200     # number of calibration data
 video_path:
   - /Short.mp4
+model_name: yolov8l
+weight: yolov8n.pt                       # weight file path
+conf_thres: 0.001
+iou_thres: 0.7
+input_shape: [640, 640]         # model input shape (Height, Width)
+anchors:                        # anchor information
+  -
+class_names:
+  - person
+  - bicycle
+  - car
+  - motorcycle
+  - airplane
+  - bus
+  - train
+  - truck
+  - boat
+  - traffic light
+  - fire hydrant
+  - stop sign
+  - parking meter
+  - bench
+  - bird
+  - cat
+  - dog
+  - horse
+  - sheep
+  - cow
+  - elephant
+  - bear
+  - zebra
+  - giraffe
+  - backpack
+  - umbrella
+  - handbag
+  - tie
+  - suitcase
+  - frisbee
+  - skis
+  - snowboard
+  - sports ball
+  - kite
+  - baseball bat
+  - baseball glove
+  - skateboard
+  - surfboard
+  - tennis racket
+  - bottle
+  - wine glass
+  - cup
+  - fork
+  - knife
+  - spoon
+  - bowl
+  - banana
+  - apple
+  - sandwich
+  - orange
+  - broccoli
+  - carrot
+  - hot dog
+  - pizza
+  - donut
+  - cake
+  - chair
+  - couch
+  - potted plant
+  - bed
+  - dining table
+  - toilet
+  - tv
+  - laptop
+  - mouse
+  - remote
+  - keyboard
+  - cell phone
+  - microwave
+  - oven
+  - toaster
+  - sink
+  - refrigerator
+  - book
+  - clock
+  - vase
+  - scissors
+  - teddy bear
+  - hair drier
+  - toothbrush
