@@ -11,7 +11,7 @@ calibration_params:
   num_calibration_data: 200     # number of calibration data
 video_path:
   - /Short.mp4
-model_name: yolov8l
+model_name: yolov8x
 weight: yolov8n.pt                       # weight file path
 conf_thres: 0.001
 iou_thres: 0.7
