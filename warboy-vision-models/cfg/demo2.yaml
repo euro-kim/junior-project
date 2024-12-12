@@ -5,4 +5,4 @@ output_path: output2
 num_worker: 8
 device: npu1pe0
 video_path:
-  - /Short.mp4
+  - Short.mp4
